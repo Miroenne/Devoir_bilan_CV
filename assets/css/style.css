@@ -6,6 +6,11 @@ body {
   width: 1160px;
   justify-self: center;
   background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+em {
+  font-style: normal;
 }
 header {
   background-color: rgba(23, 171, 179, 1);
@@ -13,18 +18,34 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  box-sizing: border-box;
 }
 header img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 5px solid #fff;
+}
+header img:hover {
+  cursor: zoom-in;
+}
+h1 {
+  font-size: 2.5em;
+  justify-self: center;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+h2 {
+  border-bottom: 2px solid #e3e3e3;
+  width: 100%;
+  padding-bottom: 10px;
 }
 address {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  line-height: 0.3em;
 }
 address i {
   margin-right: 7px;
@@ -36,6 +57,7 @@ address a {
 main {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 h2,
 data i,
@@ -44,7 +66,21 @@ time {
 }
 li {
   list-style: square;
-  font-style: normal;
+}
+li::marker {
+  color: rgb(23, 171, 179);
+  font-size: 1.3em;
+}
+footer {
+  background-color: rgb(23, 171, 179);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+footer a {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 /* CLASS */
@@ -54,9 +90,86 @@ li {
 .white {
   color: #fff;
 }
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  justify-self: center;
+}
 .address_box {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-size: 0.8em;
+  font-weight: 100;
+}
+.address_box p {
+  font-style: normal;
+}
+.top_marged {
+  margin-top: 10px;
+}
+.bottom_marged {
+  margin-bottom: 10px;
+}
+.infos_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.visual_box {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+.visual_box_inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+.visual_box p,
+.visual_box h3 {
+  margin: 0.5px;
+}
+
+/* ID */
+#job {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 15px;  
+}
+#picture_link {
+  cursor: unset;
+}
+#infos,
+#resume {
+  width: 27%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+#skills,
+#language,
+#quality,
+#hobbies,
+#resume section {
+  width: 100%;
+}
+#resume {
+  width: 80%;
+  background-color: #fff;
+  padding: 0 40px;
+}
+#profil p {
+  text-indent: 20px;
 }

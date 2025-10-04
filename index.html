@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiculum Vitae : MENIN Mathieu</title>
     <script
       src="https://kit.fontawesome.com/f6240163fc.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" href="assets/img/cv.png" type="image/png" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/cv.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta
+      name="description"
+      content="Curiculum Vitae de Menin Mathieu, Développeur Web et Web mobile"
+    >
   </head>
   <body>
     <header>
-      <img src="assets/img/profil-picture.png" alt="Photo de profil" />
+      <a href="assets/img/profil-picture.png" id="picture_link"
+        ><img src="assets/img/profil-picture.png" alt="Photo de profil"
+      ></a>
       <section>
         <div>
-          <h1 class="white">Mathieu MENIN</h1>
-          <p class="white"><strong>Développeur Web et Web Mobile</strong></p>
+          <h1 class="white">Mathieu Menin</h1>
+          <p class="white" id="job">
+            <strong>Développeur Web et Web Mobile</strong>
+          </p>
         </div>
         <address>
-          <div class="address_box">
+          <div class="address_box top_marged">
             <a class="white" href="mailto:monadresse@fournisseur.fr">
               <i class="fa-solid fa-envelope"></i>Mail</a
             >
@@ -31,11 +39,11 @@
               ><i class="fa-solid fa-house"></i>Adresse</a
             >
           </div>
-          <div class="address_box">
+          <div class="address_box bottom_marged">
             <a class="white" href="tel:0777777777">
               <i class="fa-solid fa-phone"></i>Téléphone</a
             >
-            <p class="white"><i class="fa-solid fa-car"></i>Permis B et A</p>
+            <p class="white"><i class="fa-solid fa-car"></i>Permis A et B</p>
           </div>
         </address>
       </section>
@@ -44,8 +52,8 @@
       <section id="infos">
         <section id="skills">
           <h2>Compétences</h2>
-          <section id="first-skill">
-            <p><em>HTML</em></p>
+          <section id="first-skill" class="infos_box">
+            <p class="bold"><em>HTML</em></p>
             <div>
               <data value="4">
                 <i class="fa-solid fa-star"></i>
@@ -56,8 +64,8 @@
               </data>
             </div>
           </section>
-          <section id="second-skill">
-            <p><em>CSS</em></p>
+          <section id="second-skill" class="infos_box">
+            <p class="bold"><em>CSS</em></p>
             <div>
               <data value="3.5">
                 <i class="fa-solid fa-star"></i>
@@ -68,8 +76,8 @@
               </data>
             </div>
           </section>
-          <section id="third-skill">
-            <p><em>GIT/GITHUB</em></p>
+          <section id="third-skill" class="infos_box">
+            <p class="bold"><em>GIT/GITHUB</em></p>
             <div>
               <data value="2">
                 <i class="fa-solid fa-star"></i>
@@ -80,8 +88,8 @@
               </data>
             </div>
           </section>
-          <section id="fourth-skill">
-            <p><em>SEO</em></p>
+          <section id="fourth-skill" class="infos_box">
+            <p class="bold"><em>SEO</em></p>
             <div>
               <data value="1.5">
                 <i class="fa-solid fa-star"></i>
@@ -95,31 +103,35 @@
         </section>
         <section id="language">
           <h2>Langues</h2>
-          <strong>
-            <div>
-              <p>Français</p>
-              <p>Langue maternelle</p>
-            </div>
-            <div>
-              <p>Anglais</p>
-              <p>Collège/Lycée</p>
-            </div>
-          </strong>
-          <div>
-            <p>Japonais</p>
+          <div class="infos_box">
+            <p><strong>Français</strong></p>
+            <p>Langue maternelle</p>
+          </div>
+          <div class="infos_box">
+            <p><strong>Anglais</strong></p>
+            <p>Collège/Lycée</p>
+          </div>
+          <div class="infos_box">
+            <p class="bold">Japonais</p>
             <p>Notions du quotidien</p>
           </div>
         </section>
         <section id="quality">
           <h2>Qualités</h2>
           <ul>
-            <em>
-              <li>Curieux</li>
-              <li>Polyvalant</li>
-              <li>Volontaire</li>
-              <li>Consciencieux</li>
-              <li>Bonne logique générale</li>
-            </em>
+            <li><em>Curieux</em></li>
+            <li>
+              <em>Polyvalant</em>
+            </li>
+            <li>
+              <em>Volontaire</em>
+            </li>
+            <li>
+              <em>Consciencieux</em>
+            </li>
+            <li>
+              <em>Bonne logique</em>
+            </li>
           </ul>
         </section>
         <section id="hobbies">
@@ -137,7 +149,7 @@
         <section id="profil">
           <h2>Profil</h2>
           <p>
-            Après plusieurs années passées dans mon entreprise, j'ai
+            Après plusieurs années passées dans mon entreprise, j'ai eu
             l'opportunité d'évoluer et de changer de poste. Ce changement de
             poste m'a permis de découvrir le code avec VBA Excell en créant des
             formulaires pour faciliter l'utilisation des tableaux nécessaires à
@@ -153,71 +165,99 @@
         <section id="education">
           <h2>Formations</h2>
           <div class="visual_box">
-            <h3>Titre Professionnel DWWM</h3>
-            <p>Centre Europén de Formation</p>
-            <time datetime="2025">2025 </time
-            ><time datetime="2026">- 2026</time>
+            <div class="visual_box_inner">
+              <h3>Titre Professionnel DWWM</h3>
+              <div>
+                <time datetime="2025">2025 </time
+                ><time datetime="2026">- 2026</time>
+              </div>
+            </div>
+            <p class="italic">Centre Europén de Formation</p>
           </div>
           <div class="visual_box">
-            <h3>Formation au métier d'ascensoriste</h3>
-            <p>Centre de formation AFPA de Istres</p>
-            <time datetime="2008">2008</time>
+            <div class="visual_box_inner">
+              <h3>Formation au métier d'ascensoriste</h3>
+              <time datetime="2008">2008</time>
+            </div>
+            <p class="italic">Centre de formation AFPA de Istres</p>
           </div>
           <div class="visual_box">
-            <h3>CAP/BEP Mécanicien Automobile</h3>
-            <p>Centre de formation IFA de Nice</p>
-            <time datetime="2004">2004</time>
+            <div class="visual_box_inner">
+              <h3>CAP/BEP Mécanicien Automobile</h3>
+              <time datetime="2004">2004</time>
+            </div>
+            <p class="italic">Centre de formation IFA de Nice</p>
           </div>
         </section>
         <section id="training">
+          <h2>Stages</h2>
           <div class="visual_box">
-            <h3>Technicien de modernisation</h3>
-            <p>Société KONE élévateurs</p>
-            <time datetime="2009">2009</time>
+            <div class="visual_box_inner">
+              <h3>Technicien de modernisation</h3>
+              <time datetime="2009">2009</time>
+            </div>
+            <p class="italic">Société KONE élévateurs</p>
           </div>
           <div class="visual_box">
-            <h3>Mécanicien Automobile</h3>
-            <p>Garage Renault FANARA</p>
-            <time datetime="2002">2002 </time
-            ><time datetime="2004">- 2004</time>
+            <div class="visual_box_inner">
+              <h3>Mécanicien Automobile</h3>
+              <div>
+                <time datetime="2002">2002 </time
+                ><time datetime="2004">- 2004</time>
+              </div>
+            </div>
+            <p class="italic">Garage Renault FANARA</p>
           </div>
         </section>
         <section id="experiences">
+          <h2>Expériences</h2>
           <div class="visual_box">
-            <h3>Responsable de service</h3>
-            <p>Société Ilex Ascenseurs</p>
-            <time datetime="2020">2020 -</time>
+            <div class="visual_box_inner">
+              <h3>Responsable de service</h3>
+              <time datetime="2020">2020 -</time>
+            </div>
+            <p class="italic">Société Ilex Ascenseurs</p>
           </div>
           <div class="visual_box">
-            <h3>Technicien ascensoriste</h3>
-            <p>Société Ilex Ascenseurs</p>
-            <time datetime="2014">2014 </time
-            ><time datetime="2020">- 2020</time>
+            <div class="visual_box_inner">
+              <h3>Technicien ascensoriste</h3>
+              <div>
+                <time datetime="2014">2014 </time
+                ><time datetime="2020">- 2020</time>
+              </div>
+            </div>
+            <p class="italic">Société Ilex Ascenseurs</p>
           </div>
           <div class="visual_box">
-            <h3>Agent de sécurité routière</h3>
-            <p>Société de sécurité routière NANBU (Japon)</p>
-            <time datetime="2014-03">Mars 2014 </time
-            ><time datetime="2014-07">- Juillet 2014</time>
+            <div class="visual_box_inner">
+              <h3>Agent de sécurité routière</h3>
+              <div>
+                <time datetime="2014-03">Mars 2014 </time
+                ><time datetime="2014-07">- Juillet 2014</time>
+              </div>
+            </div>
+            <p class="italic">Société de sécurité routière NANBU (Japon)</p>
           </div>
         </section>
       </section>
     </main>
     <footer>
       <div>
-        <a href="https://www.linkedin.com/in/mathieu-menin-488baa259/"
+        <a
+          class="white"
+          href="https://www.linkedin.com/in/mathieu-menin-488baa259/"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
-        <a href="https://github.com/Miroenne"
+        <a class="white" href="https://github.com/Miroenne"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a href="https://www.instagram.com/miroenne_22361106"
+        <a class="white" href="https://www.instagram.com/miroenne_22361106"
           ><i class="fa-brands fa-instagram"></i
         ></a>
       </div>
-      <small
+      <small class="white"
         >Mis à jour le :
-        <time datetime="2025-10-03">03/10/2025</time>
+        <time class="white" datetime="2025-10-03">03/10/2025</time>
       </small>
     </footer>
   </body>
