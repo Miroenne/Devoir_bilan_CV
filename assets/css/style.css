@@ -1,3 +1,10 @@
+/* POLICE */
+@font-face{
+  font-family: "Raleway";
+  src: url("../font/Raleway/Raleway/Raleway-Regular.woff") format("woff");
+  src: url("../font/Raleway/Raleway/static/Raleway-Regular.ttf") format("truetype");
+}
+
 /* TAG */
 html {
   background-color: #e3e3e3;
@@ -8,6 +15,10 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+h1, h2, h3{
+  font-family: "Lato", sans-serif;
 }
 em {
   font-style: normal;
@@ -78,9 +89,15 @@ footer {
   align-items: center;
   padding: 10px 0;
 }
-footer a {
+footer div {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin: 10px 0;
+}
+footer a {
+  margin: 0 10px;
+}
+footer a:hover{
+  opacity: 0.5;
 }
 
 /* CLASS */
@@ -138,6 +155,11 @@ footer a {
 .visual_box h3 {
   margin: 0.5px;
 }
+.visual_box:hover{
+  background-color: #e3e3e3;
+  border-left: 5px solid rgb(23, 171, 179);
+}
+
 
 /* ID */
 #job {
@@ -158,10 +180,10 @@ footer a {
   box-sizing: border-box;
   padding: 0 30px;
 }
-#skills,
-#language,
-#quality,
-#hobbies,
+#infos h2{
+  margin-bottom: 10px;
+}
+#infos section,
 #resume section {
   width: 100%;
 }
