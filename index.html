@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curiculum Vitae : MENIN Mathieu</title>
-    <script
-      src="https://kit.fontawesome.com/f6240163fc.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Curiculum Vitae : MENIN Mathieu</title>   
     <link rel="icon" href="assets/img/cv.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,21 +28,30 @@
         </div>
         <address>
           <div class="address_box top_marged">
-            <a class="white" href="mailto:monadresse@fournisseur.fr">
-              <i class="fa-solid fa-envelope"></i>Mail</a
-            >
-            <a
+            <div class="container">
+              <div class="icon" id="mail"></div>
+              <a class="white" href="mailto:monadresse@fournisseur.fr">
+              Mail</a>
+            </div>
+            <div class="container">
+              <div class="icon" id="address"></div>
+              <a
               class="white"
               href="https://www.google.com/maps/@44.2020526,5.6262664,8.46z?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              ><i class="fa-solid fa-house"></i>Adresse</a
-            >
+              >Adresse</a>
+            </div>            
           </div>
           <div class="address_box bottom_marged">
-            <a class="white" href="tel:0777777777">
-              <i class="fa-solid fa-phone"></i>Téléphone</a
-            >
-            <p class="white"><i class="fa-solid fa-car"></i>Permis A et B</p>
+            <div class="container">
+              <div class="icon" id="phone"></div>
+              <a class="white" href="tel:0777777777">
+              Téléphone</a>
+            </div> 
+            <div class="container">
+              <div class="icon" id="car"></div>
+              <p class="white">Permis A et B</p>
+            </div>           
           </div>
         </address>
       </section>
@@ -57,49 +62,49 @@
           <h2>Compétences</h2>
           <article class="infos_box">
             <p class="bold"><em>HTML</em></p>
-            <div>
-              <data value="4">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+            <div >
+              <data value="4" class="container">
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star empty"></i>                
               </data>
             </div>
           </article>
           <article class="infos_box">
             <p class="bold"><em>CSS</em></p>
             <div>
-              <data value="3.5">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
+              <data value="3.5" class="container">
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star half"></i>
+                <i class="star empty"></i>                
               </data>
             </div>
           </article>
           <article class="infos_box">
             <p class="bold"><em>GIT/GITHUB</em></p>
             <div>
-              <data value="2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+              <data value="2" class="container">
+                <i class="star filled"></i>
+                <i class="star filled"></i>
+                <i class="star empty"></i>
+                <i class="star empty"></i>
+                <i class="star empty"></i>                
               </data>
             </div>
           </article>
           <article class="infos_box">
             <p class="bold"><em>SEO</em></p>
             <div>
-              <data value="1.5">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+              <data value="1.5" class="container">
+                <i class="star filled"></i>
+                <i class="star half"></i>
+                <i class="star empty"></i>
+                <i class="star empty"></i>
+                <i class="star empty"></i>
               </data>
             </div>
           </article>
@@ -190,7 +195,7 @@
               <time datetime="2004">2004</time>
             </div>
             <p class="italic">Centre de formation IFA de Nice</p>
-          </div>
+          </article>
         </section>
         <section id="training">
           <h2>Stages</h2>
@@ -245,18 +250,15 @@
       </section>
     </main>
     <footer>
-      <div>
-        <a
+      <div class="container">   
+          <a
           class="white"
           href="https://www.linkedin.com/in/mathieu-menin-488baa259/"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a class="white" href="https://github.com/Miroenne"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a class="white" href="https://www.instagram.com/miroenne_22361106"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
+          ><div class="link" id="linkedin"></div></a>          
+          <a class="white" href="https://github.com/Miroenne"
+          ><div class="link" id="git"></div></a>          
+          <a class="white" href="https://www.instagram.com/miroenne_22361106"
+          ><div class="link" id="insta"></div></a>
       </div>
       <small class="white"
         >Mis à jour le :
