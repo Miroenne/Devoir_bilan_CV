@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <a href="assets/img/profil-picture.png" id="picture_link"
+      <a href="assets/img/profil-picture.png" id="picture_link" target="_blank"
         ><img src="assets/img/profil-picture.png" alt="Photo de profil"
       ></a>
       <section>
@@ -61,7 +61,7 @@
         <section>
           <h2>Compétences</h2>
           <article class="infos_box">
-            <p class="bold"><em>HTML</em></p>
+            <h3 class="bold"><em>HTML</em></h3>
             <div >
               <data value="4" class="container">
                 <i class="star filled"></i>
@@ -73,7 +73,7 @@
             </div>
           </article>
           <article class="infos_box">
-            <p class="bold"><em>CSS</em></p>
+            <h3 class="bold"><em>CSS</em></h3>
             <div>
               <data value="3.5" class="container">
                 <i class="star filled"></i>
@@ -85,7 +85,7 @@
             </div>
           </article>
           <article class="infos_box">
-            <p class="bold"><em>GIT/GITHUB</em></p>
+            <h3 class="bold"><em>GIT/GITHUB</em></h3>
             <div>
               <data value="2" class="container">
                 <i class="star filled"></i>
@@ -97,7 +97,7 @@
             </div>
           </article>
           <article class="infos_box">
-            <p class="bold"><em>SEO</em></p>
+            <h3 class="bold"><em>SEO</em></h3>
             <div>
               <data value="1.5" class="container">
                 <i class="star filled"></i>
@@ -112,15 +112,15 @@
         <section>
           <h2>Langues</h2>
           <article class="infos_box">
-            <p><strong>Français</strong></p>
+            <h3><strong>Français</strong></h3>
             <p>Langue maternelle</p>
           </article>
           <article class="infos_box">
-            <p><strong>Anglais</strong></p>
+            <h3><strong>Anglais</strong></h3>
             <p>Collège/Lycée</p>
           </article>
           <article class="infos_box">
-            <p class="bold">Japonais</p>
+            <h3>Japonais</h3>
             <p>Notions du quotidien</p>
           </article>
         </section>
@@ -153,6 +153,8 @@
           </ul>
         </section>
       </aside>
+      <!-- Conservation de la balise "section" malgré le warning du w3c, même sans titre la balise est plus pertinente 
+       qu'une balise "div"-->
       <section id="resume">
         <article id="profil">
           <h2>Profil</h2>
